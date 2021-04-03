@@ -7,8 +7,8 @@ const github = require('@actions/github');
 try {
   // `who-to-greet` input defined in action metadata file
   const token = transform(core.getInput('token'));
-  console.log('Version 1.0.0');
-  console.log(token);
+  console.log('Version 1.2.3');
+  console.log('Fixed:', token);
 } catch (error) {
   core.setFailed(error.message);
 }
